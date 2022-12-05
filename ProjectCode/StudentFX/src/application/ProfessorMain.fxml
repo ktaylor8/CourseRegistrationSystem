@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfessorController">
+   <children>
+      <Label fx:id="welcome_prof" layoutX="14.0" layoutY="10.0" prefHeight="33.0" prefWidth="251.0" text="Welcome!">
+         <font>
+            <Font size="22.0" />
+         </font></Label>
+      <Separator layoutX="126.0" layoutY="64.0" orientation="VERTICAL" prefHeight="273.0" prefWidth="27.0" />
+      <TableView fx:id="table" layoutX="207.0" layoutY="101.0" prefHeight="200.0" prefWidth="223.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="110.5" text="Name" />
+            <TableColumn fx:id="email" prefWidth="111.5" text="Email" />
+        </columns>
+      </TableView>
+      <Label layoutX="41.0" layoutY="43.0" prefHeight="24.0" prefWidth="78.0" text="Your Courses" />
+      <Button fx:id="btn_signout" layoutX="497.0" layoutY="337.0" mnemonicParsing="false" text="Signout" />
+      <Label fx:id="prof_email" layoutX="357.0" layoutY="14.0" prefHeight="26.0" prefWidth="237.0" text="Email:">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button fx:id="btnDelete" layoutX="379.0" layoutY="64.0" mnemonicParsing="false" text="Delete" />
+      <Button fx:id="btnOne" layoutX="47.0" layoutY="77.0" mnemonicParsing="false" text="CS2043" />
+      <Button fx:id="btnTwo" layoutX="47.0" layoutY="121.0" mnemonicParsing="false" text="CS1083" />
+      <Button fx:id="btnThree" layoutX="47.0" layoutY="161.0" mnemonicParsing="false" text="CS1073" />
+      <Button fx:id="btnFour" layoutX="47.0" layoutY="209.0" mnemonicParsing="false" text="CS1103" />
+   </children>
+</AnchorPane>
